@@ -17,10 +17,12 @@ int main(){
  * these lines call?
  **/
 
+    
     Movie a(0, s1);
     Movie b(a);
     Movie c = a;
     Movie d;
+    //creates deep copy of c 
     d = c;
     Movie e;
 
