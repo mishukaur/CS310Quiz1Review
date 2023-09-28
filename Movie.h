@@ -4,7 +4,9 @@
 */
 
 
-#ifndef MOVIE_H
+//header guards
+//make sure don't redefine a .h file multiple times 
+#ifndef MOVIE_H 
 #define MOVIE_H
 
 #include <string>
@@ -24,9 +26,15 @@ class Movie{
          * How can we call each of them?
          */
 
-
+//constructors 
+//default constructor -- no params
+//to call: Movie name;
         Movie();
+//value constructor -- takes params 
+//to call: Movie n(params);
         Movie(int n, string const &str);
+//copy constructor -- make copy of object 
+//to call: Movie o(n); OR Movie p = n;
         Movie(Movie const &s);
 
 
